@@ -149,3 +149,22 @@ numbers() {
 # Note $RANDOM gives a big random number. But taking a modulo of that number
 # with any number n would ensure that the random number is always within the
 # range of 1-n
+random_num(){
+    while:
+    do
+        # I used the Richard Blum and Christine Bresnahan, Linux Command Line 
+        # and Shell Scripting Bible to make these random numbers between 0-9
+        num1=int(10*rand())
+        num2=int(10*rand())
+        answer_num=$(num1+num2)
+
+        echo "$num1"
+        echo "$num2"
+        echo "What is the sum of the numbers?: "
+        read sum_num
+
+        if [[ "$sum_num" -eq "$answer_num"]]; then
+            echo "correct"
+        else
+            echo "incorrect
+}
