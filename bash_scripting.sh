@@ -19,6 +19,7 @@ echo "$variable_name"
 ############
 # Now print the following using the variable
 # "Here is the value of the variable: something"
+echo "Here is the value of the variable: $variable_name"
 
 ###########
 
