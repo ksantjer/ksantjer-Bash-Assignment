@@ -14,6 +14,7 @@ variable_name="something"
 
 ############
 # Write the command to print this variable
+echo "$variable_name"
 
 ############
 # Now print the following using the variable
