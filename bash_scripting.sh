@@ -122,7 +122,18 @@ cond_test() {
 # the input equals to the sum of the two number, it prints "correct" else it
 # prints "incorrect"
 
-
+numbers() {
+    echo "3"
+    echo "7"
+    answer=10
+    echo "Input the sum of the two numbers: "
+    read sum
+    if [[ "$sum" -eq "$answer" ]]; then
+        echo "correct"
+    else    
+        echo "incorrect"
+    fi
+}
 
 ############################
 # Once done with it 
