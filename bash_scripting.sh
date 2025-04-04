@@ -106,6 +106,17 @@ printit alice bob
 # [[ number -gt number2 ]] greater than
 # [[ number -ge number2 ]] greater than or equal to
 # (( number > number2 )) evaluate the math and return something
+cond_test() {
+    echo "Enter first input: "
+    read input1
+    echo "Enter second input: "
+    read input2
+
+    if [[ input1 == input2 ]]; then
+        echo "hello"
+    else
+        echo "bye"
+}
 
 # Now write a function that prints two numbers on screen and takes an input. if
 # the input equals to the sum of the two number, it prints "correct" else it
