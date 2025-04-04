@@ -30,6 +30,8 @@ echo "Here is the value of the variable: $variable_name"
 # Write the command to print the present working directory with the following
 # string
 # "I am currently in this directory: <name of the present working directory>"
+PWD=$(pwd)
+echo "I am currently win this directory: $PWD"
 
 ##########
 
