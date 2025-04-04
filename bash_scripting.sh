@@ -41,7 +41,7 @@ someone=name
 
 # Now ${!someone} would reference to variable $name. Print something using the
 # variable someone to instead of name, to print "alice"
-
+echo "${!someone}"
 
 # The use of special symbols to manipulate the variables is called shell
 # expansion
